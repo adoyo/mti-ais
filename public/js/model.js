@@ -27,28 +27,20 @@ var msg_create_list_data = {
     active: 1
 };
 
-var set_msg_type_key_common = ['BROAD CAST', '412863000', 'SATETY', 'BOTH B'];
 var msg_create_set_msg_type_list_data = {
     title: '[SET MSG TYPE]',
     list: ['ADRS TYPE', 'MMSI', 'MSG TYPE', 'CHANNEL'],
-    key: set_msg_type_key_common,
+    key: ['BROAD CAST', '412863000', 'SATETY', 'BOTH B'],
     active: 1
 };
 
 var msg_create_set_msg_type_adrs_list_data = {
     title: '[SET MSG TYPE]',
     list: ['ADRS TYPE', 'MMSI', 'MSG TYPE', 'CHANNEL'],
-    key: set_msg_type_key_common,
+    key: ['BROAD CAST', '412863000', 'SATETY', 'BOTH B'],
     select: ['BROAD CAST', 'ADRS CAST'],
     active: 1,
     selectActive: 0
-};
-
-var msg_create_set_msg_type_mmsi_list_data = {
-    title: '[SET MSG TYPE]',
-    list: ['ADRS TYPE', 'MMSI', 'MSG TYPE', 'CHANNEL'],
-    key: set_msg_type_key_common,
-    numActive: 0
 };
 
 var msg_tx_list_data = {
@@ -92,3 +84,25 @@ var diagnostics_list_data = {
     'MEMORY CLEAR', 'ACTIVATE KEY', 'FOR SERVICE'],
     active: 1
 }
+
+//channel view菜单
+var channel_view_list_data = {
+    title: '[VIEW CHANNEL]',
+    list: ['POWER:　　　　　 12.5W', 'CHANNEL NO.', 'CH-A:　　　　　　2087','CH-B:　　　　　　2088']
+};
+
+//channel view菜单
+var channel_edit_list_data = {
+    title: '[EDIT CHANNEL]',
+    list: ['SELECT NO:', 'TIME[UTC]', '--/---:-:-','FORM'],
+    key: ['0'],
+    active: 1
+};
+
+var channel_edit_select_list_data ={
+    title: '[EDIT CHANNEL]',
+    list: ['FROM MMSI: ___________', 'POWER:','　　　　　　CH-A:','　　　　　　CH-B:','MODE　　　　CH-A:','　　　　　　CH-B:','Zone','CH NO'],
+    key: ['','12.5W','2087','2087','TX/RX','TX/RX','1NM'],
+    active: 2
+};
+
