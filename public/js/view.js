@@ -23,6 +23,16 @@ var dbl_list_tpl = '<ul>'
     + '{@/each}'
     + '</ul>';
 
+//双列列表:用于msg tx与rx的显示 长度较长的时候使用
+var dbl_listlong_tpl = '<ul>'
+    + '<li>'
+    + '${title}'
+    + '</li>'
+    + '{@each list as i, index}'
+    + '<li><span style="width: 180px;display: inline-block;">${i}</span><span>${key[index]}</span></li>'
+    + '{@/each}'
+    + '</ul>';
+
 //选择列表:用于set msg type时的显示
 var select_list_tpl = '<ul>'
     + '<li>'
@@ -63,6 +73,13 @@ function render_dbl_list(data) {
     $('li:eq(' + data.active +') span').last().addClass('active');
 }
 
+function render_dbllong_list(data) {
+    renderType = 'dbl_list';
+    var list_html = juicer(dbl_listlong_tpl, data);
+    $('#led').html(list_html);
+    $('li:eq(' + data.active +') span').last().addClass('active');
+}
+
 function render_select_list(data) {
     renderType = 'select_list';
     var list_html = juicer(select_list_tpl, data);
@@ -84,3 +101,4 @@ function render_num_list(data) {
     $('#under').offset({left: pos.left + data.numActive * 8, top: pos.top})
     $('.active').removeClass('active');
 }
+

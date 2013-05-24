@@ -72,8 +72,22 @@ function intial() {
     render_list(intial_list_data);
 }
 
+//channel setting 菜单
 function channel() {
     render_list(channel_list_data);
+}
+
+function channel_view(){
+    render_list(channel_view_list_data);
+}
+
+function channel_edit(){
+    render_dbl_list(channel_edit_list_data);
+}
+
+function channel_edit_select()
+{
+    render_dbllong_list(channel_edit_select_list_data);
 }
 
 function diagnostics() {

@@ -26,6 +26,8 @@ var Route = Backbone.Router.extend({
         'user': 'auto',
         'intial': 'auto',
         'channel': 'auto',
+        'channel/view':'auto',
+        'channel/edit':'auto',
         'diagnostics': 'auto'
     },
 
