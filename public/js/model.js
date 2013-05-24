@@ -1,4 +1,4 @@
-/**
+﻿/**
  * User: SteveZheng
  * Date: 13-5-13
  * Time: 上午10:44
@@ -99,6 +99,7 @@ var channel_edit_list_data = {
     active: 1
 };
 
+//channel view edit_select 菜单
 var channel_edit_select_list_data ={
     title: '[EDIT CHANNEL]',
     list: ['FROM MMSI: ___________', 'POWER:','　　　　　　CH-A:','　　　　　　CH-B:','MODE　　　　CH-A:','　　　　　　CH-B:','Zone','CH NO'],
