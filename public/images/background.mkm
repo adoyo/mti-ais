@@ -1,0 +1,10 @@
+<MKM version="2.0" imageFileUrl="file:///J:/www/mti-ais/public/images/background.png">
+  <Marks>
+    <LengthMark direction="12" color="16711680" length="414" x="1" y="5"/>
+    <LengthMark direction="12" color="16711680" length="321" x="61" y="42"/>
+    <LengthMark direction="3" color="16711680" length="250" x="47" y="50"/>
+    <LengthMark direction="12" color="16711680" length="170" x="413" y="16"/>
+    <LengthMark direction="3" color="16711680" length="51" x="22" y="0"/>
+    <LengthMark direction="12" color="16711680" length="60" x="-1" y="255"/>
+  </Marks>
+</MKM>
